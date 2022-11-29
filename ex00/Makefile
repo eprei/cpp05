@@ -5,7 +5,7 @@ NAME = Bureaucrat
 
 SRCS = main.cpp Bureaucrat.cpp
 
-CFLAGS = -Werror -Wextra -Wall -std=c++98 -g #-pedantic
+CFLAGS = -Werror -Wextra -Wall -std=c++98 #-g #-pedantic
 
 OBJ = $(SRCS:.cpp=.o)
 

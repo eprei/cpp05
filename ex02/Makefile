@@ -1,9 +1,9 @@
 CXX = c++
 # CXX = g++-12
 
-NAME = en_rang_les_larves
+NAME = ah_mais_non
 
-SRCS = main.cpp Bureaucrat.cpp Form.cpp
+SRCS = main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp
 
 CFLAGS = -Werror -Wextra -Wall -std=c++98 #-g #-pedantic
 
