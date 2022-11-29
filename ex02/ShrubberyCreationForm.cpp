@@ -53,21 +53,19 @@ void			ShrubberyCreationForm::execute( Bureaucrat const & executor ) const
 			throw (ShrubberyCreationForm::NoSignedException());
 		if (executor.getGrade() > _gradeToExecute)
 			throw (Form::GradeTooLowException());
-		std::cout << _name << " Is executed" << std::endl;
 		outputFileName = _target;
 		outputFileName.append("_shrubbery");
-
 		std::ofstream outfile (outputFileName);
-		outfile << "               ,@@@@@@@,
-       ,,,.   ,@@@@@@/@@,  .oo8888o.
-    ,&%%&%&&%,@@@@@/@@@@@@,8888\88/8o
-   ,%&\%&&%&&%,@@@\@@@/@@@88\88888/88'
-   %&&%&%&/%&&%@@\@@/ /@@@88888\88888'
-   %&&%/ %&%%&&@@\ V /@@' `88\8 `/88'
-   `&%\ ` /%&'    |.|        \ '|8'
-       |o|        | |         | |
-       |.|        | |         | |
-jgs \\/ ._\//_/__/  ,\_//__\\/.  \_//__/_ " << std::endl;
+		outfile << "               ,@@@@@@@," << std::endl;
+		outfile << "       ,,,.   ,@@@@@@/@@,  .oo8888o."  << std::endl;
+		outfile << "    ,&'%'%&%&&%,@@@@@/@@@@@@,8888'\'88/8o" << std::endl;
+		outfile << "   ,%&'\'%&&%&&%,@@@'\'@@@/@@@88'\'88888/88'" << std::endl;
+		outfile << "   %&&%&%&/%&&%@@'\'@@/ /@@@88888'\'88888'" << std::endl;
+		outfile << "   %&&%/ %&'%'%&&@@'\' V /@@' `88'\'8 `/88'" << std::endl;
+		outfile << "   `&%'\' ` /%&'    |.|        '\' '|8'" << std::endl;
+		outfile << "       |o|        | |         | |" << std::endl;
+		outfile << "       |.|        | |         | |" << std::endl;
+		outfile << "    \\/ ._'\'//_/__/  ,'\'_//__\\/.  '\'_//__/_ " << std::endl;
 		outfile.close();
 		std::cout << outputFileName << std::endl;
 	}
