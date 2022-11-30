@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-ShrubberyCreationForm::ShrubberyCreationForm( void ) : Form( "ShrubberyCreationForm", 145, 137)
+ShrubberyCreationForm::ShrubberyCreationForm( void ) :Form( "ShrubberyCreationForm", 145, 137)
 {
 	std::cout << "Default ShrubberyCreationForm constructor called" << std::endl;
 	return;
@@ -11,13 +11,13 @@ ShrubberyCreationForm::ShrubberyCreationForm( void ) : Form( "ShrubberyCreationF
 ShrubberyCreationForm::ShrubberyCreationForm( std::string target )
 : Form("ShrubberyCreationForm", 145, 137), _target(target)
 {
-	std::cout << "String ShrubberyCreationForm constructor called" << std::endl;
+	// std::cout << "String ShrubberyCreationForm constructor called" << std::endl;
 	return ;
 }
 
 ShrubberyCreationForm::~ShrubberyCreationForm(void)
 {
-	std::cout << "ShrubberyCreationForm destructor called" << std::endl;
+	// std::cout << "ShrubberyCreationForm destructor called" << std::endl;
 	return ;
 }
 

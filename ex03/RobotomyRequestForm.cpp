@@ -13,13 +13,13 @@ RobotomyRequestForm::RobotomyRequestForm( void ) : Form("RobotomyRequestForm", 7
 RobotomyRequestForm::RobotomyRequestForm( std::string target )
 : Form("RobotomyRequestForm", 72, 45), _target(target)
 {
-	std::cout << "String RobotomyRequestForm constructor called" << std::endl;
+	// std::cout << "String RobotomyRequestForm constructor called" << std::endl;
 	return ;
 }
 
 RobotomyRequestForm::~RobotomyRequestForm(void)
 {
-	std::cout << "RobotomyRequestForm destructor called" << std::endl;
+	// std::cout << "RobotomyRequestForm destructor called" << std::endl;
 	return ;
 }
 

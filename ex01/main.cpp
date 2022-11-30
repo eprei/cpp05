@@ -34,7 +34,7 @@ int main()
 	Form		formulaire6("Must be signed", 125, 125);
 	std::cout << formulaire6 << std::endl;
 	NEW_LINE;
-	Bureaucrat	theNewEmployee("The new employee", 150);
+	Bureaucrat	theNewEmployee("The new employee", 126);
 	formulaire6.beSigned(theNewEmployee);
 	std::cout << formulaire6 << std::endl;
 	Bureaucrat	boss("The boss", 1);

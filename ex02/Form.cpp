@@ -53,12 +53,7 @@ Form &	Form::operator=( Form const & rhs )
 {
 	std::cout << "Copy assignment operator Form called" << std::endl;
 	if (this != &rhs)
-	{
-		this->_name = rhs._name;
 		this->_isItSigned = rhs._isItSigned;
-		// this->_gradeToSigne = rhs._gradeToSigne;
-		// this->_gradeToExecute = rhs._gradeToExecute;
-	}
 	return *this;
 }
 

@@ -11,13 +11,13 @@ PresidentialPardonForm::PresidentialPardonForm( void ) : Form("PresidentialPardo
 PresidentialPardonForm::PresidentialPardonForm( std::string target )
 : Form("PresidentialPardonForm", 25, 5), _target(target)
 {
-	std::cout << "String PresidentialPardonForm constructor called" << std::endl;
+	// std::cout << "String PresidentialPardonForm constructor called" << std::endl;
 	return ;
 }
 
 PresidentialPardonForm::~PresidentialPardonForm(void)
 {
-	std::cout << "PresidentialPardonForm destructor called" << std::endl;
+	// std::cout << "PresidentialPardonForm destructor called" << std::endl;
 	return ;
 }
 

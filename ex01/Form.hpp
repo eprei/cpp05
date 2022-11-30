@@ -17,7 +17,7 @@ class Form{
 		Form( void );
 		Form( Form const & src );
 		Form( std::string name, int gradeToSigne, int gradeToExecute);
-		~Form( void );
+		virtual ~Form( void );
 
 		Form &	operator=( Form const & rhs );
 
@@ -41,10 +41,10 @@ class Form{
 
 	private:
 
-		std::string	_name;
-		bool		_isItSigned;
-		const int	_gradeToSigne;
-		const int	_gradeToExecute;
+		const std::string	_name;
+		bool				_isItSigned;
+		const int			_gradeToSigne;
+		const int			_gradeToExecute;
 
 };
 

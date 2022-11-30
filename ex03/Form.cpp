@@ -4,7 +4,7 @@
 Form::Form( void ) : _name("[ unnamed form ]"), _isItSigned(false),
 _gradeToSigne(1), _gradeToExecute(1)
 {
-	std::cout << "Default Form constructor called" << std::endl;
+	// std::cout << "Default Form constructor called" << std::endl;
 	return ;
 }
 
@@ -19,14 +19,14 @@ _gradeToSigne(src.getGradeToSigne()), _gradeToExecute(src.getGradeToExecute())
 Form::Form( std::string name, int gradeToSigne, int gradeToExecute) : _name(name), _isItSigned(false),
 _gradeToSigne(gradeToSigne),  _gradeToExecute(gradeToExecute)
 {
-	std::cout << "Form constructor called. [ name ] [ gradeToSigne ] [ gradeToExecute ]" << std::endl;
+	// std::cout << "Form constructor called. [ name ] [ gradeToSigne ] [ gradeToExecute ]" << std::endl;
 	try
 	{
 		if ( gradeToSigne < MAX_GRADE || gradeToExecute < MAX_GRADE)
 			throw (Form::GradeTooHighException());
 		else if ( gradeToSigne > MIN_GRADE || gradeToExecute > MIN_GRADE)
 			throw (Form::GradeTooLowException());
-		std::cout << "The form has been successfully created" << std::endl;
+		// std::cout << "The form has been successfully created" << std::endl;
 	}
 	catch(Form::GradeTooHighException& e)
 	{
@@ -45,7 +45,7 @@ _gradeToSigne(gradeToSigne),  _gradeToExecute(gradeToExecute)
 
 Form::~Form(void)
 {
-	std::cout << "Destructor Form called" << std::endl;
+	// std::cout << "Destructor Form called" << std::endl;
 	return ;
 }
 
