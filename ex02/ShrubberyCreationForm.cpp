@@ -55,6 +55,8 @@ void			ShrubberyCreationForm::execute( Bureaucrat const & executor ) const
 		outputFileName = _target;
 		outputFileName.append("_shrubbery");
 		ofs.open(outputFileName.data());
+		if (!ofs.is_open())
+			throw (ShrubberyCreationForm::OpeningFileException());
 		ofs << "               ,@@@@@@@," << std::endl;
 		ofs << "       ,,,.   ,@@@@@@/@@,  .oo8888o."  << std::endl;
 		ofs << "    ,&'%'%&%&&%,@@@@@/@@@@@@,8888'\'88/8o" << std::endl;
@@ -76,10 +78,19 @@ void			ShrubberyCreationForm::execute( Bureaucrat const & executor ) const
 	{
 		std::cout << r.what() << std::endl;
 	}
+	catch(ShrubberyCreationForm::OpeningFileException& o)
+	{
+		std::cout << o.what() << std::endl;
+	}
 	return ;
 }
 
 const char* ShrubberyCreationForm::NoSignedException::what() const throw()
 {
 		return "Error: the form has not yet been signed";
+}
+
+const char* ShrubberyCreationForm::OpeningFileException::what() const throw()
+{
+		return "Error: the file could not be opened";
 }

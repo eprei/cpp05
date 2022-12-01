@@ -19,6 +19,11 @@ class ShrubberyCreationForm : public Form
 			public:
 				virtual const char* what() const throw();
 		};
+		class OpeningFileException: public std::exception
+		{
+			public:
+				virtual const char* what() const throw();
+		};
 
 		void			execute( Bureaucrat const & executor ) const ;
 

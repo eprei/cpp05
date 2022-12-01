@@ -12,6 +12,7 @@ int main()
 	Form* shrubbery;
 	Form* presidential;
 
+	std::cout << std::boolalpha;
 	NEW_LINE;
 	shrubbery = someRandomIntern.makeForm("shrubbery creation", "Penelope");
 	NEW_LINE;
@@ -22,7 +23,6 @@ int main()
 	std::cout << "Get signed: " << shrubbery->getSigned() << std::endl;
 	std::cout << "Target: " << static_cast<ShrubberyCreationForm*>(shrubbery)->getTarget() << std::endl;
 
-	std::cout << std::boolalpha;
 	NEW_LINE;
 	robotomy = someRandomIntern.makeForm("robotomy request", "Bender");
 	NEW_LINE;
